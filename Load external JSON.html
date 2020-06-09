@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  < title></title>
+</head>
+<body>
+  < h1>Load external JSON file</h1>
+  <div id ="result"></div>
+  <script  type="text/javascript" src="data.json" ></script>
+  <script>
+  var mydata = JSON.parse(data); // convert string into an object
+  console.log(mydata); // prints converted object into the console
+  /* Prints data from Object1 */
+  document.getElementById('result' ).innerHTML += "My name is " + mydata[0].name + " and I am working as a " + mydata[0].position + "<hr>";
+  /* Prints data from Object1 */
+  document.getElementById('result' ).innerHTML += "My name is " + mydata[1].name + " and I am working as a " + mydata[1].position;
+  </script>
+</body>
+</html>

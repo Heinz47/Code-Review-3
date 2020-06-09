@@ -1,0 +1,85 @@
+<html>
+ 
+<head>
+    <title>Creation of array object in javascript using JSON</title>
+</head>
+ 
+<body>
+    <script>
+    document.writeln("<h2>JSON array object</h2>");
+    var books = {
+        "Pascal": [{
+            "Name": "Pascal Made Simple",
+            "price": 700
+        }, {
+            "Name": "Guide to Pascal",
+            "price": 400
+        }],
+        "Scala": [{
+            "Name": "Scala for the Impatient",
+            "price": 1000
+        }, {
+            "Name": "Scala in Depth",
+            "price": 1300
+        }]
+    }
+    var i = 0
+    document.writeln("<table border='2'><tr>");
+    for (i = 0; i < books.Pascal.length; i++) {
+        document.writeln("<td>");
+        document.writeln("<table border='1' width=100 >");
+        document.writeln("<tr><td><b>Name</b></td><td width=50>" + books.Pascal[i].Name + "</td></tr>");
+        document.writeln("<tr><td><b>Price</b></td><td width=50>" + books.Pascal[i].price + "</td></tr>");
+        document.writeln("</table>");
+        document.writeln("</td>");
+    }
+    for (i = 0; i < books.Scala.length; i++) {
+        document.writeln("<td>");
+        document.writeln("<table border='1' width=100 >");
+        document.writeln("<tr><td><b>Name</b></td><td width=50>" + books.Scala[i].Name + "</td></tr>");
+        document.writeln("<tr><td><b>Price</b></td><td width=50>" + books.Scala[i].price + "</td></tr>");
+        document.writeln("</table>");
+        document.writeln("</td>");
+    }
+    document.writeln("</tr></table>");
+
+
+    var employees = `{
+  [{
+      "userId": "29893944817",
+      "jobTitleName" : "Developer",
+      "firstName": "Patrik",
+      "lastName": "Jonathan",
+      "preferredFullName" : "Patrik Jonathan",
+      "employeeCode": "E1",
+      "region": "CA",
+      "phoneNumber" : "408-1234567",
+      "emailAddress": "patrik.k.jonathan@gmail.com"
+  }, {
+      "userId": "29823964877" ,
+      "jobTitleName": "Analyst",
+      "firstName": "Tom",
+      "lastName": "Irani",
+      "preferredFullName" : "Tom Irani",
+      "employeeCode": "E2",
+      "region": "CA",
+      "phoneNumber" : "408-1111111",
+      "emailAddress": "tomrirani@gmail.com"
+  }, {
+      "userId": "25833742117" ,
+      "jobTitleName": "Program Directory",
+      "firstName": "Tom",
+      "lastName": "Hanks",
+      "preferredFullName" : "Tom Hanks",
+      "employeeCode": "E3",
+      "region": "CA",
+      "phoneNumber" : "408-2222222",
+      "emailAddress": "tomhanks@gmail.com"
+  }]
+}`
+
+
+    </script>
+</body>
+ 
+</html>
